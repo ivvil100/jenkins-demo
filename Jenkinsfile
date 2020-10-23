@@ -5,7 +5,7 @@ pipeline {
     stage("build") {
       steps {
         echo "Building maven project"
-        sh 'mvn build'
+        maven 'build'
       }
     }
   }
